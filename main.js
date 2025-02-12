@@ -27,3 +27,7 @@ console.log(list.getTail());
 console.log(list.at(4));
 console.log(list.at(10));
 console.log(list.contains("alligator"));
+
+list.updateAt("monkey", list.find("parrot"));
+console.log(list.at(4));
+console.log(list.toString());

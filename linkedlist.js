@@ -112,6 +112,15 @@ class LinkedList {
     string += "null";
     return string;
   }
+
+  updateAt(value, index) {
+    let currentNode = this.head;
+    for (let i = 1; i < index; i++) {
+      currentNode = currentNode.nextNode;
+    }
+
+    currentNode.value = value;
+  }
 }
 
 class Node {
